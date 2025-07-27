@@ -7,6 +7,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const cors = require('cors'); 
 // Parse JSON bodies
+app.use(cors());
 app.use(bodyParser.json());
 
 // Firebase Admin Initialization
